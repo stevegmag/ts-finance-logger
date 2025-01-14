@@ -21,5 +21,5 @@ tutorialList:
   - 
 
 ## TODOS:
-- [ X ] get project set up
+- [X] get project set up
 - [ ] finish tutorial
