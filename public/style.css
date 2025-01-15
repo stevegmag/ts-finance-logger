@@ -1,72 +1,96 @@
-body{
+body {
   margin: 0;
   font-family: Roboto; 
 }
-.wrapper{
+.wrapper {
   max-width: 960px;
   margin: 0 auto;
 }
-h1{
+h1 {
   margin: 40px auto;
-  color: #ff0aa7;
   text-align: center;
+  color: #ff0aa7;
 }
-ul{
+ul {
   padding: 0;
   list-style-type: none;
 }
-li{
+li {
+  position: relative;
+  margin: 10px auto;
   padding: 6px 10px;
   border: 1px solid #eee;
-  margin: 10px auto;
 }
-li h4{
-  color: #ff0aa7;
+li h4 {
+  max-width: 85%;
   margin: 0;
+  color: #ff0aa7;
   text-transform: capitalize;
 }
-li p{
-  color: #333;
+li p {
+  max-width: 85%;
   margin: 8px 0 0;
+  color: #333;
 }
-footer{
-  background: #eee;
-  padding: 60px;
+footer {
   margin-top: 60px;
+  padding: 60px;
+  background: #eee;
 }
-form{
+form {
   max-width: 960px;
   margin: 0 auto;
   text-align: center;
 }
-label{
+label {
   display: block;
+  margin: 16px 0 6px;
   font-weight: bold;
   font-size: 0.8em;
   color: #333;
-  margin: 16px 0 6px;
 }
-input, select{
+input, select {
   padding: 6px;
   border: 1px solid #e1e1e1;
   border-radius: 4px;
 }
-.field{
+.field {
   display: inline-block;
   margin: 0 10px;
 }
-button{
-  color: white;
-  border: 0;
-  background: #ff0aa7;
+button {
   padding: 6px;
   min-width: 80px;
+  border: 0;
+  background: #ff0aa7;
   border-radius: 4px;
+  color: white;
 }
-footer a{
-  text-align: center;
+button.delete {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: #ff0aa7;
+}
+footer a {
   display: block;
-  color: #999;
   margin-top: 40px;
+  text-align: center;
   font-size: 0.7em;
+  color: #999;
+}
+.total { 
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: baseline;
+  border-top: 3px solid #ff0aa7;
+  margin: 20px auto;
+  text-align: right;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #ff0aa7;
+}
+#total {
+  margin-left: 15px;
 }
